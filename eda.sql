@@ -1,6 +1,10 @@
 SELECT *
 from layoffs_cleaned;
 
+SELECT MIN(`date`), MAX(`date`)
+FROM layoffs_cleaned;
+-- The data that we have ranges almost exactly 3 year from March 2020 to March 2023
+
 SELECT MIN(total_laid_off), MAX(total_laid_off)
 FROM layoffs_cleaned;
 
